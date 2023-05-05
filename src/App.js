@@ -14,7 +14,7 @@ function App() {
   const handleChange = (e) => {
     setSignInput({
       ...signupInput,
-      [e.target.jane]: e.target.value,
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -27,7 +27,7 @@ function App() {
         "The password you entered should contain 5 or more characters."
       );
     } else if (signupInput.password !== signupInput.confirmPassword) {
-      return setError("The passwords don't match. Try again.");
+      return setError("The passwords don't match. Try again");
     }
   };
 
